@@ -16,4 +16,7 @@ class HELLOUNREAL_API UMyGameInstance : public UGameInstance
 public:
 	
 	virtual void Init() override;
+
+private:
+	
 };
