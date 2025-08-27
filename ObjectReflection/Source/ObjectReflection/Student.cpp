@@ -1,0 +1,17 @@
+// Fill out your copyright notice in the Description page of Project Settings.
+
+
+#include "Student.h"
+
+UStudent::UStudent()
+{
+	Name = TEXT("이학생");
+	Year = 1;
+	Id = 1;
+}
+
+void UStudent::DoLesson()
+{
+	Super::DoLesson(); // 상위 클래스의 DoLesson 호출
+	UE_LOG(LogTemp, Log, TEXT("%d학년 %d번 %s 님이 수업을 듣습니다."), Year, Id, *Name);
+}
